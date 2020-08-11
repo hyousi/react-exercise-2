@@ -6,7 +6,10 @@ export default function Header(props) {
   return (
     <nav>
       <h1>Store</h1>
-      <div>{selected}</div>
+      <div>
+        <i className="fas fa-shopping-cart"></i>
+        <span className="shopping-cart">{selected}</span>
+      </div>
     </nav>
   );
 }

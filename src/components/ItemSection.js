@@ -6,12 +6,12 @@ export default function ItemSection(props) {
   const { category, products, handleClick } = props;
   const title = <h2>{category}</h2>;
   const productList = products.map((product, index) => (
-    <Item key={index} product={product} hadnleClick={handleClick} />
+    <Item key={index} product={product} handleClick={handleClick} />
   ));
   return (
     <section className="item-section">
       {title}
-      {productList}
+      <div className="item-list">{productList}</div>
     </section>
   );
 }

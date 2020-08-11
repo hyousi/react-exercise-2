@@ -5,3 +5,43 @@
   margin: 80px auto $base-margin auto;
   background-color: $white;
 }
+
+nav {
+  background-color: $support-blue;
+  color: $white;
+  padding: $base-padding $base-padding * 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-container {
+  padding: $base-padding*2 $base-padding*2 $base-padding*3 $base-padding*2;
+  .item-section {
+    .item-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .item-card {
+        padding: $base-padding 0;
+        h4 {
+          margin: 0;
+        }
+        img {
+          margin: $base-margin 0;
+        }
+        button {
+          background-color: $support-blue;
+          float: right;
+          color: $white;
+          border: none;
+          padding: 5px 12px;
+          &:hover {
+            background-color: $second-blue;
+          }
+        }
+      }
+    }
+  }
+}

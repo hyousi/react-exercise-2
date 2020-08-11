@@ -6,10 +6,12 @@ export default function Item(props) {
   const { product, handleClick } = props;
   return (
     <div className="item-card">
-      <h2>{product.name}</h2>
+      <h4>{product.name}</h4>
       <img src={imgSrc} alt="product image" className="image-size" />
-      <div>{product.price}</div>
-      <button onClick={handleClick}>add to cart</button>
+      <div>
+        {product.price}
+        <button onClick={handleClick}>add to cart</button>
+      </div>
     </div>
   );
 }
